@@ -105,7 +105,7 @@ function Home() {
                             </Paper>
                         )}
                     </Grid>
-                    <Grid item xs={12} sm={6} md={9}>
+                    <Grid item xs={12} sm={9} md={9}>
                         <Posts setCurrentId={setCurrentId} />
                     </Grid>
                 </Grid>

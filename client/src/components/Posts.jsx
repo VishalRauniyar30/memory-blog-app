@@ -18,13 +18,20 @@ function Posts({ setCurrentId }) {
     if (!posts.length && !isLoading) return 'No posts'
 
     return (
-        <Grid container alignItems="stretch" spacing={3}>
+        <Box 
+            sx={{ 
+                display: 'flex', 
+                flexWrap: 'wrap', 
+                justifyContent: 'center', 
+                gap: 2
+            }}
+        >
             {posts?.map((post) => (
-                <Grid key={post._id} item xs={12} sm={12} md={6} lg={4}>
+                <Box key={post._id} sx={{ width: { xs: '100%', sm: '48%', md: '48%', lg: '32%' } }}>
                     <Post post={post} setCurrentId={setCurrentId} />
-                </Grid>
+                </Box>
             ))}
-        </Grid>
+        </Box>
     )
 }
 

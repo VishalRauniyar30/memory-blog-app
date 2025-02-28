@@ -53,7 +53,7 @@ function Navbar() {
         >
             <Link to='/' style={{ display: 'flex', alignItems: 'center' }}>
                 <CardMedia component='img' src={memoriesText} alt="icon" height="45px" />
-                <CardMedia component='img' style={{ marginTop: '5px', marginLeft: '40px' }} src={memoriesLogo} alt="icon" height='40px' />
+                <CardMedia component='img' style={{ marginTop: '5px', marginLeft: '10px' }} src={memoriesLogo} alt="icon" height='40px' />
             </Link>
             <Toolbar sx={{ display: 'flex', justifyContent: 'flex-end', width: { xs: 'auto', sm: '320px' }  }} >
                 {user?.result ? (
